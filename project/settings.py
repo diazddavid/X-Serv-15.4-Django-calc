@@ -26,10 +26,12 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+import calc
 
 # Application definition
 
 INSTALLED_APPS = (
+    'calc',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
