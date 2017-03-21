@@ -6,13 +6,13 @@ from django.http import HttpResponse
 def operacion(self, op1, opType, op2):
 
     if opType == "+":
-        to_return = str(op1 + op2) 
+        to_return = str(int(op1) + int(op2)) 
     elif opType == "-":
-        to_return = str(op1 - op2)
+        to_return = str(int(op1) - int(op2))
     elif opType == "*":
-        to_return = str(op1 * op2)
+        to_return = str(int(op1) * int(op2))
     else:
-        to_return = str(op1 / op2)
+        to_return = str(int(op1) / int(op2))
 
     return HttpResponse("<body><h1> Su operacion " + str(op1)
                          + opType + op2  + " = " + to_return
